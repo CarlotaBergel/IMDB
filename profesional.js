@@ -1,18 +1,20 @@
-var Professional = /** @class */ (function () {
-    function Professional(nam, age, wel, hei, retired, nati, oscar, prof) {
-        this.name = nam;
-        this.age = age;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Profesional = void 0;
+var Profesional = /** @class */ (function () {
+    function Profesional(nombre, edad, wel, hei, retirado, nacionalidad, oscar, profesion) {
+        this.name = nombre;
+        this.age = edad;
         this.welght = wel;
         this.height = hei;
-        this.isRetired = retired;
-        this.nationality = nati;
+        this.isRetired = retirado;
+        this.nationality = nacionalidad;
         this.oscarsNumber = oscar;
-        this.profession = prof;
+        this.profession = profesion;
     }
-    Professional.prototype.toString = function () {
-        return "name: " + this.name + ", age: " + this.age + ", welght: " + this.welght + ", height: " + this.height + ", retirado: " + this.isRetired + ", nationality: " + this.nationality + ", oscar Number: " + this.oscarsNumber + ", profesion: " + this.profession;
+    Profesional.prototype.toString = function () {
+        return "Nombre: " + this.name + ", \n age: " + this.age + ", \n welght: " + this.welght + ",\n height: " + this.height + ",\n retirado: " + this.isRetired + ",\n nationality: " + this.nationality + ", \n oscar Number: " + this.oscarsNumber + ",\n profesion: " + this.profession;
     };
-    return Professional;
+    return Profesional;
 }());
-var pelicula1 = new Professional("Nombre", 23, 58, 89, false, "española", 0, "actor");
-console.log(pelicula1.toString());
+exports.Profesional = Profesional;

@@ -1,4 +1,4 @@
-class Profesional{
+export class Profesional{
     public name: string;
     public age: number;
     public welght: number;
@@ -8,19 +8,19 @@ class Profesional{
     public oscarsNumber: number;
     public profession: string;
 
-    constructor (nam:string, age:number, wel: number, hei: number, retired: boolean, nati: string, oscar: number, prof: string){
-        this.name = nam;
-        this.age = age;
+    constructor (nombre:string, edad:number, wel: number, hei: number, retirado: boolean, nacionalidad: string, oscar: number, profesion: string){
+        this.name = nombre;
+        this.age = edad;
         this.welght = wel;
         this.height = hei;
-        this.isRetired = retired;
-        this.nationality = nati;
+        this.isRetired = retirado;
+        this.nationality = nacionalidad;
         this.oscarsNumber = oscar;
-        this.profession = prof;
+        this.profession = profesion;
     }
 
     toString(): string{
-        return "name: "+ this.name+ ", age: "+ this.age+ ", welght: "+ this. welght + ", height: "+ this.height + ", retirado: "+ this.isRetired + ", nationality: "+ this.nationality + ", oscar Number: "+ this.oscarsNumber + ", profesion: "+ this.profession;
+        return "Nombre: "+ this.name+ ", \n age: "+ this.age+ ", \n welght: "+ this. welght + ",\n height: "+ this.height + ",\n retirado: "+ this.isRetired + ",\n nationality: "+ this.nationality + ", \n oscar Number: "+ this.oscarsNumber + ",\n profesion: "+ this.profession;
     }
 }
 
