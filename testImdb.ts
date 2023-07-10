@@ -9,3 +9,9 @@ let arrMovie = [movie1, movie2, movie3];
 let myImdb = new Imdb(arrMovie);
 
 console.log(myImdb)
+
+let imdbJSON: string = JSON.stringify(myImdb);
+
+console.log(imdbJSON);
+
+// Para poder guardar el objeto en un fichero JSON lo he tenido que poner el el testimdb.js
