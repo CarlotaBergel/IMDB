@@ -14,4 +14,11 @@ let imdbJSON: string = JSON.stringify(myImdb);
 
 console.log(imdbJSON);
 
-// Para poder guardar el objeto en un fichero JSON lo he tenido que poner el el testimdb.js
+let fs = require ("fs");
+
+// stringify para pasarlo a sting
+fs.writeFileSync("imdbBBDD.json", JSON.stringify(imdbJSON));
+let JSONretorno = fs.readFileSync("imdbBBDD.json");
+let objeto = JSON.parse(JSONretorno);
+console.log(objeto);
+
