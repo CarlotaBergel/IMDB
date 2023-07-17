@@ -17,8 +17,13 @@ console.log(imdbJSON);
 let fs = require ("fs");
 
 // stringify para pasarlo a sting
-fs.writeFileSync("imdbBBDD.json", JSON.stringify(imdbJSON));
+fs.writeFileSync("imdbBBDD.json", JSON.stringify(myImdb));
 let JSONretorno = fs.readFileSync("imdbBBDD.json");
 let objeto = JSON.parse(JSONretorno);
 console.log(objeto);
 
+
+myImdb.escribirEnFicheroJSON("funcion.json");
+
+let myImdb2 = myImdb.ObtenerInstanciaIMDB("funcion.json");
+console.log(myImdb2);
